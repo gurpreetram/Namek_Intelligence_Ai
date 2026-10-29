@@ -1,0 +1,111 @@
+:root {
+  /* --- Design tokens --- */
+  --bg: #0b0d10;
+  --surface: #14171c;
+  --surface-raised: #1a1e24;
+  --border: #262b33;
+  --border-soft: #1d2129;
+
+  --text-primary: #e6e8eb;
+  --text-muted: #8b92a0;
+  --text-dim: #565d6b;
+
+  --accent: #e8a33d;
+  --accent-dim: #7a5b28;
+  --profit: #3ecf8e;
+  --loss: #ef5350;
+  --profit-dim: #1e3d30;
+  --loss-dim: #3d2020;
+  --early-momentum: #8b7cf6;
+  --early-momentum-dim: #332e5c;
+
+  --font-display: 'IBM Plex Sans', -apple-system, sans-serif;
+  --font-body: 'IBM Plex Sans', -apple-system, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+th {
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+input, button, select {
+  font-family: inherit;
+  font-size: 13px;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid var(--border);
+  background: var(--surface-raised);
+  color: var(--text-primary);
+  padding: 8px 16px;
+  border-radius: 2px;
+  transition: border-color 0.15s ease;
+}
+
+button:hover {
+  border-color: var(--accent);
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+input, select {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 8px 10px;
+  border-radius: 2px;
+}
+
+.mono { font-family: var(--font-mono); }
+.text-profit { color: var(--profit); }
+.text-loss { color: var(--loss); }
+.text-muted { color: var(--text-muted); }
+.text-dim { color: var(--text-dim); }

@@ -1,0 +1,21 @@
+{
+  "_comment": "NSE equity segment trading holidays (full-day closures on what would otherwise be a trading weekday). Cross-checked against three independent sources (Zerodha, ClearTax, Groww) on 2026-07-13; all weekday-vs-date pairings verified programmatically against the real calendar. Weekend-falling holidays (e.g. 2026-02-15 Maha Shivaratri, 2026-03-21 Eid-Ul-Fitr, 2026-08-15 Independence Day, 2026-11-08 Diwali Laxmi Pujan/Muhurat) are intentionally NOT listed here -- the market is already closed those days via the Saturday/Sunday check, so they don't affect is_trading_day() and including them would be redundant. Source of truth for future years: official NSE circulars at nsearchives.nseindia.com.",
+  "2026": [
+    {"date": "2026-01-15", "name": "Maharashtra municipal corporation elections"},
+    {"date": "2026-01-26", "name": "Republic Day"},
+    {"date": "2026-03-03", "name": "Holi"},
+    {"date": "2026-03-26", "name": "Shri Ram Navami"},
+    {"date": "2026-03-31", "name": "Shri Mahavir Jayanti"},
+    {"date": "2026-04-03", "name": "Good Friday"},
+    {"date": "2026-04-14", "name": "Dr. Baba Saheb Ambedkar Jayanti"},
+    {"date": "2026-05-01", "name": "Maharashtra Day"},
+    {"date": "2026-05-28", "name": "Bakri Id"},
+    {"date": "2026-06-26", "name": "Muharram"},
+    {"date": "2026-09-14", "name": "Ganesh Chaturthi"},
+    {"date": "2026-10-02", "name": "Mahatma Gandhi Jayanti"},
+    {"date": "2026-10-20", "name": "Dussehra"},
+    {"date": "2026-11-10", "name": "Diwali-Balipratipada"},
+    {"date": "2026-11-24", "name": "Prakash Gurpurb Sri Guru Nanak Dev"},
+    {"date": "2026-12-25", "name": "Christmas"}
+  ]
+}

@@ -1,0 +1,70 @@
+.env
+config/.token_cache.json
+config/.instrument_master.parquet
+storage/candles/*.parquet
+__pycache__/
+*.pyc
+
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials/
+
+# Python environments and cache
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+
+# Local data and logs
+logs/
+config/.token_cache.json
+config/.instrument_master.parquet
+storage/candles/*.parquet
+
+# Local secrets and environments
+.env
+.env.*
+!.env.example
+venv/
+.venv/
+node_modules/
+
+# Local market-data cache
+storage/yahoo_5min/*.parquet
+storage/candles/*.parquet
+
+# Generated market data - keep locally, don't upload
+storage/*.parquet
+storage/**/*.parquet
+storage/**/*.corrupted_*
+
+# Python-generated cache files
+__pycache__/
+*.py[cod]
+
+# Local Claude settings
+.claude/settings.local.json
+
+# Local PDF reference files
+/scratch_pdfs/
+
+# Local operational logs
+notifications/alerts.log
+*.log
+
+# Local paper-trading state and journals
+paper_trading/*.json
+paper_trading/*.jsonl
+paper_trading/*.bak*
+
+# Generated reports
+reporting/latest_report.html
+reporting/calibration_report_validated_breakout.json
+
+# Backup of previous nested frontend Git metadata
+frontend/.git-backup/
